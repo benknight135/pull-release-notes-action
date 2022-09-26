@@ -1,5 +1,5 @@
 import * as core from "@actions/core"
-import { ReleaseNotes } from "@nblagoev/pull-release-notes"
+import { ReleaseNotes } from "./releaseNotes"
 
 process.on("unhandledRejection", handleError)
 main().catch(handleError)
