@@ -1,6 +1,5 @@
 import * as core from "@actions/core"
-import { ReleaseNotes } from "@nblagoev/pull-release-notes"
-import { ImprovedFormatter } from "./formatters"
+import { ReleaseNotes } from "./releaseNotes"
 
 process.on("unhandledRejection", handleError)
 main().catch(handleError)
@@ -15,7 +14,7 @@ async function main(): Promise<void> {
         repo,
         fromTag: baseRef,
         toTag: headRef,
-        formatter: ImprovedFormatter.defaultFormatter
+        formatter: ReleaseNotes.defaultFormatter
     })
 
     core.info(`Pulling release notes between base '${baseRef}' and head '${headRef}'`)
