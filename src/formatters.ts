@@ -17,7 +17,7 @@ export function defaultPullRequestNotableFormatter(pullRequest?: PullRequestInfo
 }
 
 export function defaultNotableChangesFormatter(notableChanges?: string): string {
-    return `## Notable Changes\n${notableChanges || "**TODO**: Pull relevant changes here!"}`
+    return `## Notable Changes\n${notableChanges || "Changes: "}`
 }
 
 export function defaultPullRequestTitleFormatter(pullRequest?: PullRequestInfo): string {
