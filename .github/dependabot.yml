@@ -6,6 +6,6 @@ updates:
     interval: weekly
     time: '07:00'
   reviewers:
-  - nblagoev
+  - benknight135
   labels:
   - dependencies
